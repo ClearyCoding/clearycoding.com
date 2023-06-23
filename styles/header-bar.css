@@ -1,0 +1,42 @@
+.header-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+
+    background-color: #28282a;
+    box-shadow: 0 2px 20px rebeccapurple;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left {
+    margin-left: 50px;
+}
+.header-right {
+    margin-right: 50px;
+    width: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-title, .header-page {
+    font-family: Faustina, Arial;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+.header-title {
+    font-size: 20px;
+}
+.header-page {
+    cursor: pointer;
+}
+.header-page:hover {
+    text-decoration: underline;
+}
