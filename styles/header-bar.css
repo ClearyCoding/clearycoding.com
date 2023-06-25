@@ -5,7 +5,7 @@
     right: 0;
     height: 70px;
 
-    background-color: #28282a;
+    background: linear-gradient(#111111, #212123);
     box-shadow: 0 2px 20px rebeccapurple;
 
     display: flex;
@@ -23,10 +23,20 @@
     align-items: center;
     justify-content: space-between;
 }
-
-
-.header-title, .header-page {
-    font-family: Faustina, Arial;
+.header-current-page-box {
+    width: 100px;
+    height: 70px;
+    transform: skew(-20deg);
+    background: linear-gradient(rebeccapurple, #432e63);
+    text-align: center;
+}
+.header-current-page {
+    margin-top: 25%;
+    transform: skew(20deg);
+    display: block;
+}
+.header-title, .header-page, .header-current-page {
+    font-family: Faustina, serif;
     font-weight: 700;
     color: white;
     text-decoration: none;
@@ -34,9 +44,9 @@
 .header-title {
     font-size: 20px;
 }
-.header-page {
+.header-page, .header-current-page {
     cursor: pointer;
 }
-.header-page:hover {
+.header-page:hover, .header-current-page:hover {
     text-decoration: underline;
 }
