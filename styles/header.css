@@ -50,7 +50,6 @@ header {
 .header-title {
     font-size: 20px;
     margin-left: 10px;
-
 }
 .header-page:hover, .header-current-page:hover {
     text-decoration: underline;

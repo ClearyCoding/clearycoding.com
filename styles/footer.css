@@ -5,7 +5,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    position: relative;
+    position: absolute;
 
     height: 100px;
     padding: 0 50px 0 30px;
@@ -54,8 +54,6 @@ footer {
 }
 .footer-contact-icon {
     height: 30px;
-    cursor: pointer;
-    margin-top: 5px;
 }
 
 .site-version {
