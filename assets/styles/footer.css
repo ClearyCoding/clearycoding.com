@@ -1,0 +1,66 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+
+    height: 100px;
+    padding: 0 50px 0 30px;
+
+    background-color: #111111;
+    box-shadow: 0 -1px 10px rebeccapurple;
+}
+.footer-section {
+
+}
+.footer-contact-box {
+    height: 100%;
+    width: 150px;
+    margin: 0 20px 0 20px;
+
+    transform: skew(-20deg);
+    background: linear-gradient(rebeccapurple, #432e63);
+    text-align: center;
+}
+.footer-contact {
+    margin-top: 10px;
+
+    display: block;
+
+    transform: skew(20deg);
+}
+.footer-title {
+    color: white;
+    display: block;
+    font-family: Faustina, serif;
+    font-weight: 700;
+    font-size: 16px;
+    height: 20%;
+    margin: 0 0 5px 0;
+}
+.footer-page {
+    color: grey;
+    display: block;
+    font-family: Faustina, serif;
+    font-size: 12px;
+    height: 25%;
+    margin: 0;
+}
+.footer-page:hover {
+    color: darkgrey;
+}
+.footer-contact-icon {
+    height: 30px;
+}
+
+.site-version {
+    position: absolute;
+    font-size: 12px;
+    color: #676767;
+    bottom: 0;
+    right: 0;
+    padding-right: 2px;
+}
