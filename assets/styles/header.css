@@ -155,7 +155,6 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
         margin-left: 10px;
     }
     .header-current-page-container {
-        width: 100px;
         height: 70px;
         background: linear-gradient(rebeccapurple, #432e63);
         text-align: center;
@@ -169,9 +168,15 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     header .header-navbar {
         width: 400px;
     }
+    .header-current-page-container {
+        width: 100px;
+    }
 }
 @media (min-width: 870px){
     header .header-navbar {
         width: 600px;
+    }
+    .header-current-page-container {
+        width: 120px;
     }
 }
