@@ -25,21 +25,26 @@ header {
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-.header-current-page-box {
-    width: 100px;
+.header-current-page-container {
+    width: 120px;
     height: 70px;
     transform: skew(-20deg);
     background: linear-gradient(rebeccapurple, #432e63);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.header-current-page {
-    margin-top: 25%;
+.header-current-page-container .header-page-title {
     transform: skew(20deg);
     display: block;
 }
-.header-title, .header-page-title, .header-current-page {
-    font-family: Faustina, serif;
+.header-title, .header-page-title {
     font-weight: 700;
     color: white;
     text-decoration: none;
@@ -51,6 +56,6 @@ header {
     font-size: 20px;
     margin-left: 10px;
 }
-.header-page:hover, .header-current-page:hover {
+.header-page-title:hover {
     text-decoration: underline;
 }

@@ -16,7 +16,7 @@ footer {
 .footer-section {
 
 }
-.footer-contact-box {
+.footer-contact-container {
     height: 100%;
     width: 150px;
     margin: 0 20px 0 20px;
@@ -27,15 +27,12 @@ footer {
 }
 .footer-contact {
     margin-top: 10px;
-
     display: block;
-
     transform: skew(20deg);
 }
 .footer-title {
     color: white;
     display: block;
-    font-family: Faustina, serif;
     font-weight: 700;
     font-size: 16px;
     height: 20%;
@@ -44,7 +41,6 @@ footer {
 .footer-page {
     color: grey;
     display: block;
-    font-family: Faustina, serif;
     font-size: 12px;
     height: 25%;
     margin: 0;
