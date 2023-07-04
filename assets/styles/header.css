@@ -126,7 +126,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     top: 0;
 }
 
-@media (min-width: 659px){
+@media (min-width: 670px){
 
     header li {
         float: left;
@@ -164,7 +164,7 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     }
 }
 
-@media (min-width: 660px) and (max-width: 869px){
+@media (min-width: 670px) and (max-width: 869px){
     header .header-navbar {
         width: 400px;
     }
