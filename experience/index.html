@@ -18,17 +18,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header  class="header">
         <div class="header-branding">
-            <img src="/assets/images/personal-icon.png" alt="My Webpage Symbol" class="branding-icon">
-            <a href="/" class="branding-title">Alexander J. Cleary</a>
+            <img src="/assets/images/personal-icon.png" alt="My Webpage Symbol" class="header-branding-icon">
+            <a href="/" class="header-branding-title">Alexander J. Cleary</a>
         </div>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <input class="burger-toggle" type="checkbox" id="burger-toggle" />
+        <label class="burger" for="burger-toggle"><span class="burger-section"></span></label>
         <ul class="header-navbar">
-            <li><a href="/" class="header-page-title">Home</a></li>
-            <li class="header-current-page-container"><a href="/experience" class="header-page-title">Experience</a></li>
-            <li><a href="/journal" class="header-page-title">Journal</a></li>
+            <li><a href="/" class="header-navbar-item">Home</a></li>
+            <li class="header-navbar-highlighted_item"><a href="/experience" class="header-navbar-item">Experience</a></li>
+            <li><a href="/journal" class="header-navbar-item">Journal</a></li>
         </ul>
     </header>
     <main class="pageExperience">
