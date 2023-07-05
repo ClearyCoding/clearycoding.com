@@ -32,7 +32,7 @@ header {
 }
 
 .header-current-page-container {
-    background: linear-gradient(to right, rebeccapurple, #432e63);
+    background: linear-gradient(to right, rebeccapurple, #54307E, rebeccapurple);
 }
 .header-current-page-container .header-page-title {
 }
@@ -42,7 +42,7 @@ header ul {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #212123;
+    background: #1e1e1e;
 }
 
 header ul a {
@@ -60,7 +60,7 @@ header .header-navbar {
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-    box-shadow: 0 5px 5px rebeccapurple;
+    box-shadow: 0 5px 5px rebeccapurple,  0 -10px 10px #1e1e1e;
     display: block;
 }
 
