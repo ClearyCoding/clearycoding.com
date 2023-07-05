@@ -65,7 +65,7 @@
     }
 
     .header-navbar-highlighted_item {
-        background: linear-gradient(to right, rebeccapurple, #54307E, rebeccapurple);
+        background: linear-gradient(to right, rebeccapurple, #432e63, rebeccapurple);
     }
     .header-navbar-item {
         padding: 20px;
@@ -75,18 +75,30 @@
 
     /* Header Collapsing "Burger" Button */
     .burger {
-        margin: 6px 6px 0 0;
         padding: 28px 20px;
         position: relative;
-        float: right;
         cursor: pointer;
+        transform: skew(20deg);
+    }
+
+    .burger-container {
+        height: 70px;
+        width: 70px;
+        background: linear-gradient(rebeccapurple, #432e63);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: skew(-20deg);
+        float: right;
+        margin-right: 20px;
     }
 
     .burger-section, .burger-section:before, .burger-section:after {
-        background: rebeccapurple;
+        background: white;
         display: block;
-        height: 2px;
-        width: 18px;
+        height: 3px;
+        width: 24px;
     }
 
     .burger-section {
@@ -101,11 +113,11 @@
     }
 
     .burger-section:before {
-        top: 5px;
+        top: 8px;
     }
 
     .burger-section:after {
-        top: -5px;
+        top: -8px;
     }
 
     .burger-toggle:checked ~ .burger .burger-section {
@@ -127,7 +139,7 @@
 @media (min-width: 670px) {
 
     /*Tablet Mode*/
-    @media (min-width: 670px) and (max-width: 869px) {
+    @media (max-width: 869px) {
 
         /*Header Navbar*/
         .header-navbar {
