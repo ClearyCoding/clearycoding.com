@@ -18,13 +18,6 @@
     margin-left: 30px;
     float: left;
 }
-.header-branding-icon {
-    height: 50px;
-}
-.header-branding-title {
-    font-size: 20px;
-    margin-left: 5px;
-}
 
 .header-branding-title, .header-navbar-item {
     font-weight: 700;
@@ -51,7 +44,37 @@
 }
 
 /* Mobile Mode */
-@media (max-width: 669px) {
+@media (max-width: 705px) {
+
+    @media (max-width: 350px) {
+        .header-branding-icon {
+            height: 40px;
+        }
+        .header-branding-title {
+            font-size: 18px;
+            margin-left: 5px;
+        }
+    }
+
+    @media (min-width: 350px) and (max-width: 400px) {
+        .header-branding-icon {
+            height: 45px;
+        }
+        .header-branding-title {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+
+    @media (min-width: 400px) {
+        .header-branding-icon {
+            height: 50px;
+        }
+        .header-branding-title {
+            font-size: 24px;
+            margin-left: 15px;
+        }
+    }
 
     /* Header Navbar */
     .header-navbar {
@@ -120,26 +143,26 @@
         top: -8px;
     }
 
-    .burger-toggle:checked ~ .burger .burger-section {
+    .burger-toggle:checked ~ .burger-container .burger .burger-section {
         background: transparent;
     }
 
-    .burger-toggle:checked ~ .burger .burger-section:before {
+    .burger-toggle:checked ~ .burger-container .burger .burger-section:before {
         transform: rotate(-45deg);
         top: 0;
     }
 
-    .burger-toggle:checked ~ .burger .burger-section:after {
+    .burger-toggle:checked ~ .burger-container .burger .burger-section:after {
         transform: rotate(45deg);
         top: 0;
     }
 }
 
 /*Desktop & Tablet Mode*/
-@media (min-width: 670px) {
+@media (min-width: 705px) {
 
     /*Tablet Mode*/
-    @media (max-width: 869px) {
+    @media (max-width: 900px) {
 
         /*Header Navbar*/
         .header-navbar {
@@ -152,7 +175,7 @@
     }
 
     /*Desktop Mode*/
-    @media (min-width: 870px) {
+    @media (min-width: 900px) {
 
         /*Header Navbar*/
         .header-navbar {
@@ -165,8 +188,13 @@
     }
 
     /* Header Branding */
+    .header-branding-icon {
+        height: 50px;
+    }
+
     .header-branding-title {
-        margin-left: 10px;
+        font-size: 24px;
+        margin-left: 15px;
     }
 
     /* Header Navbar */
