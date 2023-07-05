@@ -32,11 +32,9 @@ header {
 }
 
 .header-current-page-container {
-    transform: skew(-20deg);
-    background: transparent;
+    background: linear-gradient(to right, rebeccapurple, #432e63);
 }
 .header-current-page-container .header-page-title {
-    transform: skew(20deg);
 }
 
 header ul {
@@ -51,6 +49,7 @@ header ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
+    text-align: center;
 }
 
 header .header-branding {
@@ -161,6 +160,10 @@ header .menu-btn:checked ~ .menu-icon .nav-icon:after {
         display: flex;
         justify-content: center;
         align-items: center;
+        transform: skew(-20deg);
+    }
+    .header-current-page-container .header-page-title {
+        transform: skew(20deg);
     }
 }
 
