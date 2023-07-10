@@ -2,33 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alexander J. Cleary">
 
     <title>Home - Alexander J. Cleary</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/images/branding/favicon.ico">
 
-    <link rel="stylesheet" href="/styles/pageExperience/pageExperience.css">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/assets/styles/pageExperience/pageExperience.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/header.css">
+    <link rel="stylesheet" href="/assets/styles/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <img src="/images/personal-icon.png" alt="My Webpage Symbol" class="page-icon">
-            <a href="/" class="header-title">Alexander J. Cleary</a>
+    <header  class="header">
+        <div class="screen-size-warning">
+            This Website Does Not Support Screen Widths Less Than 325px. Sorry For The Inconvenience.
         </div>
-        <nav class="header-right">
-            <a href="/" class="header-page-title">Home</a>
-            <div class="header-current-page-box">
-                <a href="/experience" class="header-current-page">Experience</a>
-            </div>
-            <a href="/journal" class="header-page-title">Journal</a>
-        </nav>
+        <div class="header-branding">
+            <img src="/assets/images/branding/original.png" alt="Cleary Coding Logo" class="header-branding-icon">
+            <a href="/" class="header-branding-title">Alexander J. Cleary</a>
+        </div>
+        <input class="burger-toggle" type="checkbox" id="burger-toggle" />
+        <div class="burger-container">
+            <label class="burger" for="burger-toggle"><span class="burger-section"></span></label>
+        </div>
+        <ul class="header-navbar">
+            <li><a href="/" class="header-navbar-item">Home</a></li>
+            <li class="header-navbar-highlighted_item"><a href="/experience" class="header-navbar-item">Experience</a></li>
+            <li><a href="/journal" class="header-navbar-item">Journal</a></li>
+        </ul>
     </header>
     <main class="pageExperience">
         <p class="temp">Website Coming Soon! ;)</p>
@@ -39,15 +45,15 @@
         <p class="temp">Website Coming Soon! ;)</p>
     </main>
     <footer>
-    <div class="footer-contact-box">
+    <div class="footer-contact-container">
         <div class="footer-contact">
             <br>
             <p class="footer-title">Contacts</p>
             <a>
-                <img src="/images/email-icon.png" alt="My Email Contact" class="footer-contact-icon">
+                <img src="/assets/images/email-icon.png" alt="My Email Contact" class="footer-contact-icon">
             </a>
             <a href="https://github.com/ClearyCoding/" target="_blank">
-                <img src="/images/github-icon.png" alt="My Github Profile" class="footer-contact-icon">
+                <img src="/assets/images/github-icon.png" alt="My Github Profile" class="footer-contact-icon">
             </a>
         </div>
     </div>
@@ -70,7 +76,7 @@
         <p class="footer-page"> The Quick.</p>
     </div>
     <div class="site-version">
-        clearycoding.com v0.0.3
+        clearycoding.com v0.0.4
     </div>
 </footer>
 </body>

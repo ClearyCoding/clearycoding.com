@@ -9,6 +9,7 @@ footer {
 
     height: 100px;
     padding: 0 50px 0 30px;
+    z-index: 99;
 
     background-color: #111111;
     box-shadow: 0 -1px 10px rebeccapurple;
@@ -16,7 +17,7 @@ footer {
 .footer-section {
 
 }
-.footer-contact-box {
+.footer-contact-container {
     height: 100%;
     width: 150px;
     margin: 0 20px 0 20px;
@@ -27,15 +28,12 @@ footer {
 }
 .footer-contact {
     margin-top: 10px;
-
     display: block;
-
     transform: skew(20deg);
 }
 .footer-title {
     color: white;
     display: block;
-    font-family: Faustina, serif;
     font-weight: 700;
     font-size: 16px;
     height: 20%;
@@ -44,13 +42,12 @@ footer {
 .footer-page {
     color: grey;
     display: block;
-    font-family: Faustina, serif;
     font-size: 12px;
     height: 25%;
     margin: 0;
 }
 .footer-page:hover {
-    color: darkgray;
+    color: darkgrey;
 }
 .footer-contact-icon {
     height: 30px;
