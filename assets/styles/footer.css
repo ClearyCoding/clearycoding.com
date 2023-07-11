@@ -1,21 +1,20 @@
 footer {
-    display: flex;
-    justify-content: space-between;
-
     left: 0;
     right: 0;
     bottom: 0;
     position: absolute;
 
-    height: 100px;
     padding: 0 50px 0 30px;
     z-index: 99;
 
     background-color: #111111;
     box-shadow: 0 -1px 10px rebeccapurple;
 }
-.footer-section {
-
+/* Footer Contact Section*/
+.footer-contact {
+    margin-top: 10px;
+    display: block;
+    transform: skew(20deg);
 }
 .footer-contact-container {
     height: 100%;
@@ -26,12 +25,15 @@ footer {
     background: linear-gradient(rebeccapurple, #432e63);
     text-align: center;
 }
-.footer-contact {
-    margin-top: 10px;
-    display: block;
-    transform: skew(20deg);
+.footer-contact-icon {
+    height: 30px;
 }
-.footer-title {
+
+/* Footer Generic Section*/
+.footer-section {
+
+}
+.footer-section-title {
     color: white;
     display: block;
     font-weight: 700;
@@ -39,20 +41,18 @@ footer {
     height: 20%;
     margin: 0 0 5px 0;
 }
-.footer-page {
+.footer-section-item {
     color: grey;
     display: block;
     font-size: 12px;
     height: 25%;
     margin: 0;
 }
-.footer-page:hover {
+.footer-section a:hover {
     color: darkgrey;
 }
-.footer-contact-icon {
-    height: 30px;
-}
 
+/* Website Version Number */
 .site-version {
     position: absolute;
     font-size: 12px;
@@ -60,4 +60,33 @@ footer {
     bottom: 0;
     right: 0;
     padding-right: 2px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        height: 300px;
+    }
+    body {
+        padding-bottom: 300px;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+@media (min-width: 600px) {
+    footer {
+        flex-direction: row;
+        height: 100px;
+    }
+    body {
+        padding-bottom: 100px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
 }
