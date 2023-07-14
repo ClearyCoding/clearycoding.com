@@ -34,14 +34,74 @@ body {
     list-style: none;
     overflow: hidden;
     background: #1e1e1e;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.15s ease-out;
 }
 .header-navbar-item:hover {
     text-decoration: underline;
 }
 
+/* Dropdown Menus */
+.header-navbar-dropdown, .header-navbar-dropdown-button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
+}
+.header-navbar-dropdown {
+    overflow: hidden;
+    display: inline-block;
+}
+.header-navbar-dropdown-button {
+    background-color: transparent;
+    border-style: none;
+    font-family: inherit;
+    height: 70px;
+}
+.header-navbar-dropdown-content {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 10px 10px rebeccapurple;
+    background: linear-gradient(#212123, #111111);
+    margin: 0;
+    padding: 0;
+    top: 70px;
+}
+.header-navbar-dropdown-toggle:checked ~ .header-navbar-dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+.header-navbar-dropdown-content a {
+    float: none;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: white;
+    font-family: inherit;
+}
+.header-navbar-dropdown-content a:hover {
+    text-decoration: underline;
+}
+.header-navbar-dropdown-arrow {
+    display: inline-block;
+    transform: scale(1, 0.8);
+    transition: all 0.15s ease-out;
+}
+.header-navbar-dropdown-toggle:checked ~ .header-navbar-dropdown-button .header-navbar-dropdown-arrow {
+    transform: scale(1, 0.8) rotate(180deg);
+}
+.header-navbar-dropdown-toggle {
+    display: none;
+}
+
 /*Header Collapsing "Burger" Button*/
-.burger-toggle {
+.header-burger-toggle {
     display: none;
 }
 
@@ -114,7 +174,7 @@ body {
         max-height: 0;
         box-shadow: 0 5px 5px rebeccapurple, 0 -10px 10px #1e1e1e;
     }
-    .burger-toggle:checked ~ .header-navbar {
+    .header-burger-toggle:checked ~ .header-navbar {
         max-height: 240px;
     }
 
@@ -128,14 +188,14 @@ body {
     }
 
     /* Header Collapsing "Burger" Button */
-    .burger {
+    .header-burger {
         padding: 28px 20px;
         position: relative;
         cursor: pointer;
         transform: skew(20deg);
     }
 
-    .burger-container {
+    .header-burger-container {
         height: 70px;
         width: 70px;
         background: linear-gradient(rebeccapurple, #432e63);
@@ -148,42 +208,42 @@ body {
         margin-right: 20px;
     }
 
-    .burger-section, .burger-section:before, .burger-section:after {
+    .header-burger-section, .header-burger-section:before, .header-burger-section:after {
         background: white;
         display: block;
         height: 3px;
         width: 24px;
     }
 
-    .burger-section {
+    .header-burger-section {
         position: relative;
-        transition: background 0.2s ease-out;
+        transition: background 0.15s ease-out;
     }
 
-    .burger-section:before, .burger-section:after {
+    .header-burger-section:before, .header-burger-section:after {
         content: "";
         position: absolute;
-        transition: all 0.2s ease-out;
+        transition: all 0.15s ease-out;
     }
 
-    .burger-section:before {
+    .header-burger-section:before {
         top: 8px;
     }
 
-    .burger-section:after {
+    .header-burger-section:after {
         top: -8px;
     }
 
-    .burger-toggle:checked ~ .burger-container .burger .burger-section {
+    .header-burger-toggle:checked ~ .header-burger-container .header-burger .header-burger-section {
         background: transparent;
     }
 
-    .burger-toggle:checked ~ .burger-container .burger .burger-section:before {
+    .header-burger-toggle:checked ~ .header-burger-container .header-burger .header-burger-section:before {
         transform: rotate(-45deg);
         top: 0;
     }
 
-    .burger-toggle:checked ~ .burger-container .burger .burger-section:after {
+    .header-burger-toggle:checked ~ .header-burger-container .header-burger .header-burger-section:after {
         transform: rotate(45deg);
         top: 0;
     }
@@ -203,6 +263,14 @@ body {
         .header-navbar-highlighted_item {
             width: 100px;
         }
+
+        /* Dropdown Menus*/
+        .header-navbar-dropdown-button {
+            padding: 4px 4px 4px 8px;
+        }
+        .header-navbar-dropdown-arrow {
+            width: 4px;
+        }
     }
 
     /*Desktop Mode*/
@@ -215,6 +283,14 @@ body {
 
         .header-navbar-highlighted_item {
             width: 120px;
+        }
+
+        /* Dropdown Menus*/
+        .header-navbar-dropdown-button {
+            padding: 16px 16px 16px 32px;
+        }
+        .header-navbar-dropdown-arrow {
+            width: 16px;
         }
     }
 
@@ -262,12 +338,12 @@ body {
         transform: skew(20deg);
     }
 
-    header li {
+    .header li{
         float: left;
     }
 
     /* Header Collapsing "Burger" Button */
-    .burger {
+    .header-burger {
         display: none;
     }
 }

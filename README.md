@@ -1,2 +1,3 @@
-# My_Website
-This repository contains the source code for my personal website ClearyCoding.com, as started on the 9th of June, 2023. 
+# ClearyCoding.Com
+
+This repository contains the source code of Alexander J. Cleary's personal website as started on the 9th of June 2023.

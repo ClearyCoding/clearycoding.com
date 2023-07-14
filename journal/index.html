@@ -26,13 +26,23 @@
             <img src="/assets/images/branding/original.png" alt="Cleary Coding Logo" class="header-branding-icon">
             <a href="/" class="header-branding-title">Alexander J. Cleary</a>
         </div>
-        <input class="burger-toggle" type="checkbox" id="burger-toggle" />
-        <div class="burger-container">
-            <label class="burger" for="burger-toggle"><span class="burger-section"></span></label>
+        <input class="header-burger-toggle" type="checkbox" id="header-burger-toggle" />
+        <div class="header-burger-container">
+            <label class="header-burger" for="header-burger-toggle"><span class="header-burger-section"></span></label>
         </div>
         <ul class="header-navbar">
             <li><a href="/" class="header-navbar-item">Home</a></li>
-            <li><a href="/experience" class="header-navbar-item">Experience</a></li>
+            <li class="header-navbar-dropdown">
+                <input class="header-navbar-dropdown-toggle" type="checkbox" id="header-navbar-dropdown-toggle" />
+                <label class="header-navbar-item header-navbar-dropdown-button" for="header-navbar-dropdown-toggle">Experience
+                    <span class="header-navbar-dropdown-arrow">&#9660</span>
+                </label>
+                <ul class="header-navbar-dropdown-content">
+                    <li><a href="/experience/stem">STEM Experience</a></li>
+                    <li><a href="/experience/loremipsum">LOREM IPSUM!</a></li>
+                    <li><a href="/experience/portfolio">Portfolio</a></li>
+                </ul>
+            </li>
             <li class="header-navbar-highlighted_item"><a href="/journal" class="header-navbar-item">Journal</a></li>
         </ul>
     </header>
