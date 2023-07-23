@@ -60,10 +60,11 @@
 
 /* Mobile Mode */
 @media (max-width: 600px) {
-    body {
+    /*body {
         padding-bottom: 300px;
-    }
+    }*/
     .footer {
+        position: static;
         flex-direction: column;
         grid-template-columns: 1fr 1fr;
         align-items: center;
