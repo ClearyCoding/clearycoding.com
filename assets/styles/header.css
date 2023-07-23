@@ -90,9 +90,7 @@ body {
 .header-navbar-dropdown-content a:hover {
     text-decoration: underline;
 }
-.header-navbar-dropdown-content-highlighted_item {
-    background: linear-gradient(to right, rebeccapurple, #432e63, rebeccapurple);
-}
+
 
 /*Header Collapsing "Burger" Button*/
 .header-burger-toggle {
@@ -382,6 +380,9 @@ body {
     }
     .header-navbar-dropdown-content a {
         width: 90px;
+    }
+    .header-navbar-dropdown-content-highlighted_item {
+        background: linear-gradient(to right, rebeccapurple, #432e63, rebeccapurple);
     }
 
     /* Header Collapsing "Burger" Button */
