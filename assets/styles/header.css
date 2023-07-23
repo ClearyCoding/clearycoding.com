@@ -1,3 +1,6 @@
+body {
+    padding-top: 70px;
+}
 .header {
     position: fixed;
     top: 0;
@@ -8,9 +11,6 @@
 
     background: linear-gradient(#111111, #212123);
     box-shadow: 0 2px 20px rebeccapurple;
-}
-body {
-    padding-top: 70px;
 }
 
 /* Header Branding */
@@ -41,6 +41,13 @@ body {
 }
 
 /* Dropdown Menus */
+.header-navbar-dropdown-toggle {
+    display: none;
+}
+.header-navbar-dropdown {
+    overflow: hidden;
+    display: inline-block;
+}
 .header-navbar-dropdown, .header-navbar-dropdown-button {
     font-size: 16px;
     border: none;
@@ -50,15 +57,19 @@ body {
     font-family: inherit;
     margin: 0;
 }
-.header-navbar-dropdown {
-    overflow: hidden;
-    display: inline-block;
-}
 .header-navbar-dropdown-button {
     background-color: transparent;
     border-style: none;
     font-family: inherit;
-    height: 70px;
+}
+.header-navbar-dropdown-arrow {
+    display: inline-block;
+    transform: scale(1, 0.8);
+    transition: all 0.15s ease-out;
+    position: absolute;
+}
+.header-navbar-dropdown-toggle:checked ~ .header-navbar-dropdown-button .header-navbar-dropdown-arrow {
+    transform: scale(1, 0.8) rotate(180deg);
 }
 .header-navbar-dropdown-content {
     list-style: none;
@@ -87,17 +98,6 @@ body {
 }
 .header-navbar-dropdown-content a:hover {
     text-decoration: underline;
-}
-.header-navbar-dropdown-arrow {
-    display: inline-block;
-    transform: scale(1, 0.8);
-    transition: all 0.15s ease-out;
-}
-.header-navbar-dropdown-toggle:checked ~ .header-navbar-dropdown-button .header-navbar-dropdown-arrow {
-    transform: scale(1, 0.8) rotate(180deg);
-}
-.header-navbar-dropdown-toggle {
-    display: none;
 }
 
 /*Header Collapsing "Burger" Button*/
@@ -266,10 +266,10 @@ body {
 
         /* Dropdown Menus*/
         .header-navbar-dropdown-button {
-            padding: 4px 4px 4px 8px;
+
         }
         .header-navbar-dropdown-arrow {
-            width: 4px;
+            font-size: 10px;
         }
     }
 
@@ -287,10 +287,10 @@ body {
 
         /* Dropdown Menus*/
         .header-navbar-dropdown-button {
-            padding: 16px 16px 16px 32px;
+
         }
         .header-navbar-dropdown-arrow {
-            width: 16px;
+            font-size: 16px;
         }
     }
 
