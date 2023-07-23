@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexander J. Cleary">
+
+    <title>Home - Alexander J. Cleary</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/branding/favicon.ico">
+
+    <link rel="stylesheet" href="/assets/styles/pageExperience/pageExperience.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/header.css">
+    <link rel="stylesheet" href="/assets/styles/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header  class="header">
+        <div class="screen-size-warning">
+            This Website Does Not Support Screen Widths Less Than 325px. Sorry For The Inconvenience.
+        </div>
+        <div class="header-branding">
+            <img src="/assets/images/branding/original.png" alt="Cleary Coding Logo" class="header-branding-icon">
+            <a href="/" class="header-branding-title">Alexander J. Cleary</a>
+        </div>
+        <input class="header-burger-toggle" type="checkbox" id="header-burger-toggle" />
+        <div class="header-burger-container">
+            <label class="header-burger" for="header-burger-toggle"><span class="header-burger-section"></span></label>
+        </div>
+        <ul class="header-navbar">
+            <li><a href="/" class="header-navbar-item">Home</a></li>
+            <li class="header-navbar-dropdown">
+                <input class="header-navbar-dropdown-toggle" type="checkbox" id="header-navbar-dropdown-toggle" />
+                <div class="header-navbar-highlighted_item"><label class="header-navbar-item header-navbar-dropdown-button" for="header-navbar-dropdown-toggle">Experience
+                    <span class="header-navbar-dropdown-arrow">&#9660</span>
+                </label></div>
+                <ul class="header-navbar-dropdown-content">
+                    <li class="header-navbar-dropdown-content-highlighted_item"><a href="/experience/stem">STEM</a></li>
+                    <li><a href="/experience/non_stem">Non-STEM</a></li>
+                    <li><a href="/experience/portfolio">Portfolio</a></li>
+                </ul>
+            </li>
+            <li><a href="/journal" class="header-navbar-item">Journal</a></li>
+        </ul>
+    </header>
+    <main class="pageExperience">
+        <p class="temp">Website Coming Soon! ;)</p>
+        <p class="temp">Website Coming Soon! ;)</p>
+        <p class="temp">Website Coming Soon! ;)</p>
+        <p class="temp">Website Coming Soon! ;)</p>
+        <p class="temp">Website Coming Soon! ;)</p>
+        <p class="temp">Website Coming Soon! ;)</p>
+    </main>
+    <iframe src="/assets/html/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+</body>
+</html>

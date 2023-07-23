@@ -26,58 +26,29 @@
             <img src="/assets/images/branding/original.png" alt="Cleary Coding Logo" class="header-branding-icon">
             <a href="/" class="header-branding-title">Alexander J. Cleary</a>
         </div>
-        <input class="burger-toggle" type="checkbox" id="burger-toggle" />
-        <div class="burger-container">
-            <label class="burger" for="burger-toggle"><span class="burger-section"></span></label>
+        <input class="header-burger-toggle" type="checkbox" id="header-burger-toggle" />
+        <div class="header-burger-container">
+            <label class="header-burger" for="header-burger-toggle"><span class="header-burger-section"></span></label>
         </div>
         <ul class="header-navbar">
             <li><a href="/" class="header-navbar-item">Home</a></li>
-            <li class="header-navbar-highlighted_item"><a href="/experience" class="header-navbar-item">Experience</a></li>
+            <li class="header-navbar-dropdown">
+                <input class="header-navbar-dropdown-toggle" type="checkbox" id="header-navbar-dropdown-toggle" />
+                <div class="header-navbar-highlighted_item"><label class="header-navbar-item header-navbar-dropdown-button" for="header-navbar-dropdown-toggle">Experience
+                    <span class="header-navbar-dropdown-arrow">&#9660</span>
+                </label></div>
+                <ul class="header-navbar-dropdown-content">
+                    <li><a href="/experience/stem">STEM</a></li>
+                    <li><a href="/experience/non_stem">Non-STEM</a></li>
+                    <li><a href="/experience/portfolio">Portfolio</a></li>
+                </ul>
+            </li>
             <li><a href="/journal" class="header-navbar-item">Journal</a></li>
         </ul>
     </header>
     <main class="pageExperience">
         <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
     </main>
-    <footer>
-    <div class="footer-contact-container">
-        <div class="footer-contact">
-            <br>
-            <p class="footer-title">Contacts</p>
-            <a>
-                <img src="/assets/images/email-icon.png" alt="My Email Contact" class="footer-contact-icon">
-            </a>
-            <a href="https://github.com/ClearyCoding/" target="_blank">
-                <img src="/assets/images/github-icon.png" alt="My Github Profile" class="footer-contact-icon">
-            </a>
-        </div>
-    </div>
-    <div class="footer-section">
-        <p class="footer-title">Pages</p>
-        <a href="/" class="footer-page">Home</a>
-        <a href="/experience" class="footer-page">Experience</a>
-        <a href="/journal" class="footer-page">Journal</a>
-    </div>
-    <div class="footer-section">
-        <p class="footer-title">Foo Bar</p>
-        <p class="footer-page">Lorem Ipsum</p>
-        <p class="footer-page"> The Quick.</p>
-        <div class="site-version">
-        </div>
-    </div>
-    <div class="footer-section">
-        <p class="footer-title">Foo Bar</p>
-        <p class="footer-page">Lorem Ipsum</p>
-        <p class="footer-page"> The Quick.</p>
-    </div>
-    <div class="site-version">
-        clearycoding.com v0.0.4
-    </div>
-</footer>
+    <iframe src="/assets/html/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
 </body>
 </html>
