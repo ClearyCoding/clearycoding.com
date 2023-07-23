@@ -45,7 +45,6 @@ body {
     display: none;
 }
 .header-navbar-dropdown {
-    overflow: hidden;
     display: inline-block;
 }
 .header-navbar-dropdown, .header-navbar-dropdown-button {
@@ -67,7 +66,8 @@ body {
     transform: scale(1, 0.8);
     transition: all 0.15s ease-out;
 }
-.header-navbar-dropdown-toggle:checked ~ .header-navbar-dropdown-button .header-navbar-dropdown-arrow {
+.header-navbar-dropdown-toggle:checked ~ .header-navbar-dropdown-button .header-navbar-dropdown-arrow,
+.header-navbar-dropdown-toggle:checked ~ .header-navbar-highlighted_item .header-navbar-dropdown-button .header-navbar-dropdown-arrow {
     transform: scale(1, 0.8) rotate(180deg);
 }
 .header-navbar-dropdown-content {
@@ -82,11 +82,10 @@ body {
 .header-navbar-dropdown-content a {
     display: block;
     float: none;
-    padding: 12px 30px;
     text-decoration: none;
-    text-align: left;
     color: white;
     font-family: inherit;
+    text-align: center;
 }
 .header-navbar-dropdown-content a:hover {
     text-decoration: underline;
@@ -170,7 +169,7 @@ body {
         box-shadow: 0 5px 5px rebeccapurple, 0 -10px 10px #1e1e1e;
     }
     .header-burger-toggle:checked ~ .header-navbar {
-        max-height: 332px;
+        max-height: 312px;
     }
 
     .header-navbar-highlighted_item {
@@ -191,10 +190,11 @@ body {
         font-size: 16px;
     }
     .header-navbar-dropdown-content {
-        margin-top: 10px;
         align-items: center;
         background: #171717;
-        box-shadow: 0 0 10px #111111;
+    }
+    .header-navbar-dropdown-content a {
+        padding: 12px 0;
     }
 
     /* Header Collapsing "Burger" Button */
@@ -274,10 +274,19 @@ body {
             width: 100px;
         }
 
+        /* Dropdown Menus */
+        .header-navbar-dropdown-content {
+            right: 135px;
+            top: 70px;
+        }
+
         /* Dropdown Menus*/
         .header-navbar-dropdown-arrow {
             font-size: 12px;
             padding: 4px 0;
+        }
+        .header-navbar-dropdown-content a {
+            padding: 12px 20px;
         }
     }
 
@@ -291,6 +300,15 @@ body {
 
         .header-navbar-highlighted_item {
             width: 120px;
+        }
+
+        /* Dropdown Menus */
+        .header-navbar-dropdown-content {
+            right: 225px;
+            top: 70px;
+        }
+        .header-navbar-dropdown-content a {
+            padding: 12px 30px;
         }
 
         /* Dropdown Menus*/
@@ -359,8 +377,10 @@ body {
         box-shadow: 0 10px 10px rebeccapurple;
         margin: 0;
         padding: 0;
-        top: 70px;
         background: linear-gradient(#212123, #111111);
+    }
+    .header-navbar-dropdown-content a {
+        width: 90px;
     }
 
     /* Header Collapsing "Burger" Button */
