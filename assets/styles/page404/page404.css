@@ -41,6 +41,6 @@
 @media (max-width: 600px) {
     .page404 {
         position: relative;
-        height: 1vh;
+        height: 100%;
     }
 }
