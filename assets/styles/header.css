@@ -53,9 +53,9 @@ body {
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
     font-family: inherit;
     margin: 0;
+    display: block;
 }
 .header-navbar-dropdown-button {
     background-color: transparent;
@@ -66,38 +66,33 @@ body {
     display: inline-block;
     transform: scale(1, 0.8);
     transition: all 0.15s ease-out;
-    position: absolute;
 }
 .header-navbar-dropdown-toggle:checked ~ .header-navbar-dropdown-button .header-navbar-dropdown-arrow {
     transform: scale(1, 0.8) rotate(180deg);
 }
 .header-navbar-dropdown-content {
     list-style: none;
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    z-index: 1;
-    box-shadow: 0 10px 10px rebeccapurple;
-    background: linear-gradient(#212123, #111111);
-    margin: 0;
     padding: 0;
-    top: 70px;
+    display: none;
 }
 .header-navbar-dropdown-toggle:checked ~ .header-navbar-dropdown-content {
     display: flex;
     flex-direction: column;
 }
 .header-navbar-dropdown-content a {
+    display: block;
     float: none;
     padding: 12px 30px;
     text-decoration: none;
-    display: block;
     text-align: left;
     color: white;
     font-family: inherit;
 }
 .header-navbar-dropdown-content a:hover {
     text-decoration: underline;
+}
+.header-navbar-dropdown-content-highlighted_item {
+    background: linear-gradient(to right, rebeccapurple, #432e63, rebeccapurple);
 }
 
 /*Header Collapsing "Burger" Button*/
@@ -175,7 +170,7 @@ body {
         box-shadow: 0 5px 5px rebeccapurple, 0 -10px 10px #1e1e1e;
     }
     .header-burger-toggle:checked ~ .header-navbar {
-        max-height: 240px;
+        max-height: 332px;
     }
 
     .header-navbar-highlighted_item {
@@ -185,6 +180,21 @@ body {
         padding: 20px;
         text-align: center;
         display: block;
+    }
+
+    /* Dropdown Menus*/
+    .header-navbar-dropdown-button {
+        padding-left: 36px;
+        height: 20px;
+    }
+    .header-navbar-dropdown-arrow {
+        font-size: 16px;
+    }
+    .header-navbar-dropdown-content {
+        margin-top: 10px;
+        align-items: center;
+        background: #171717;
+        box-shadow: 0 0 10px #111111;
     }
 
     /* Header Collapsing "Burger" Button */
@@ -265,11 +275,9 @@ body {
         }
 
         /* Dropdown Menus*/
-        .header-navbar-dropdown-button {
-
-        }
         .header-navbar-dropdown-arrow {
-            font-size: 10px;
+            font-size: 12px;
+            padding: 4px 0;
         }
     }
 
@@ -286,9 +294,6 @@ body {
         }
 
         /* Dropdown Menus*/
-        .header-navbar-dropdown-button {
-
-        }
         .header-navbar-dropdown-arrow {
             font-size: 16px;
         }
@@ -307,6 +312,11 @@ body {
     .header-branding-title {
         font-size: 24px;
         margin-left: 15px;
+    }
+
+    /* Dropdown Menus */
+    .header-navbar-dropdown-arrow {
+        position: absolute;
     }
 
     /* Header Navbar */
@@ -334,12 +344,23 @@ body {
         transform: skew(-20deg);
     }
 
-    .header-navbar-highlighted_item .header-navbar-item {
+    .header-navbar-highlighted_item .header-navbar-item,
+    .header-navbar-highlighted_item .header-navbar-dropdown-content {
         transform: skew(20deg);
     }
 
     .header li{
         float: left;
+    }
+
+    /* Dropdown Menus */
+    .header-navbar-dropdown-content {
+        position: absolute;
+        box-shadow: 0 10px 10px rebeccapurple;
+        margin: 0;
+        padding: 0;
+        top: 70px;
+        background: linear-gradient(#212123, #111111);
     }
 
     /* Header Collapsing "Burger" Button */
