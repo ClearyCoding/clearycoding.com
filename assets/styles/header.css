@@ -374,9 +374,10 @@ body {
     /* Dropdown Menus */
     .header-navbar-dropdown-content {
         position: absolute;
-        box-shadow: 0 10px 10px rebeccapurple;
+        box-shadow: 0 0 10px rebeccapurple;
         margin: 0;
         padding: 0;
+        z-index: 99;
         background: linear-gradient(#212123, #111111);
     }
     .header-navbar-dropdown-content a {
