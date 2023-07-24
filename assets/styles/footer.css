@@ -24,6 +24,9 @@
 
 /* Footer Generic Section */
 .footer-section {
+    display: flex;
+}
+.footer-subsection {
     list-style: none;
     margin: 0;
     padding: 5px 0;
@@ -44,7 +47,7 @@
     font-size: 12px;
     margin: 0;
 }
-.footer-section a:hover {
+.footer-subsection a:hover {
     color: darkgrey;
 }
 
@@ -72,7 +75,14 @@
 
     /* Footer Generic Section */
     .footer-section {
+        flex-direction: column;
+    }
+    .footer-subsection {
         align-items: center;
+        padding: 0;
+    }
+    .footer-subsection li br {
+        display: none;
     }
     .footer-section-title {
         font-size: 24px;
@@ -119,6 +129,10 @@
 
     /* Footer Generic Section */
     .footer-section {
+        flex-direction: row;
+    }
+    .footer-subsection {
+        margin-right: 20px;
         min-width: 100px;
     }
     .footer-section-title {
