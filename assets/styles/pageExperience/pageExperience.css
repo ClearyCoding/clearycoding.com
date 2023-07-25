@@ -81,11 +81,11 @@
         flex-direction: column;
         height: 900px;
     }
-    .pageExperience-category-non_stem-image, .pageExperience-category-portfolio-image {
+    .pageExperience-category-non_stem-image {
         width: 100%;
         bottom: 0;
     }
-    .pageExperience-category-stem-image {
+    .pageExperience-category-stem-image, .pageExperience-category-portfolio-image {
         width: 140%;
         background-size: cover;
         bottom: 0;
