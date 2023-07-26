@@ -2,7 +2,6 @@
     display: flex;
     width: 100%;
     box-sizing: border-box;
-    transition: flex-d;
 }
 .pageExperience-category {
     flex: 1;
@@ -35,31 +34,32 @@
 .pageExperience-category a:hover .pageExperience-category-header {
     text-decoration: underline;
 }
-.pageExperience-category-header {
+.pageExperience-category-container {
     position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.pageExperience-category-header {
     color: white;
     font-size: 64px;
     text-align: center;
     margin: 0;
-    z-index: 2;
 }
 .pageExperience-category-description {
-    position: relative;
     color: white;
     font-size: 32px;
     text-align: center;
     margin: 0;
-    z-index: 2;
 }
 .pageExperience-category-more_button {
-    position: relative;
-    left: calc(100% / 2 - 126.86px / 2);
     padding: 8px 10px;
     margin-top: 20px;
     border: white solid 3px;
-    z-index: 2;
     border-radius: 1px;
-    display: inline-block;
     color: white;
     transform: skew(-20deg);
 }
@@ -67,7 +67,6 @@
     transform: skew(20deg);
     font-size: 24px;
     font-weight: 700;
-    text-align: center;
     font-family: inherit;
 }
 .pageExperience-category a:hover .pageExperience-category-more_button {

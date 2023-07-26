@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
 }
-.page-header {
+.page404-header {
     margin: 0;
     color: white;
     font-size: 70px;
@@ -17,14 +17,14 @@
     text-align: center;
     padding-top: 50px;
 }
-.page-subheader {
+.page404-subheader {
     margin: 0;
     color: white;
     font-size: 50px;
     z-index: 2;
     text-align: center;
 }
-.page-joke {
+.page404-joke {
     margin: 60px 0 0 0;
     padding-bottom: 50px;
     color: white;
@@ -32,7 +32,7 @@
     z-index: 2;
     text-align: center;
 }
-.nyan_backdrop {
+.page404-nyan_backdrop {
     position: absolute;
     object-fit: cover;
     filter: blur(8px) brightness(70%);

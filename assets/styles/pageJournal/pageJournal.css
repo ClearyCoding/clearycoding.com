@@ -1,6 +1,8 @@
-.temp {
-    color: white;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 200px;
+.pageJournal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    height: 2000px;
+    border: white solid 5px;
 }
