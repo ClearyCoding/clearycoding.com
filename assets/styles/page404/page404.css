@@ -1,15 +1,28 @@
 .page404 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     position: absolute;
+    display: flex;
+    justify-content: center;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
 }
-.page404-header {
+.page404-nyan_backdrop {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px) brightness(70%);
+    z-index: 1;
+}
+.page404-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page404-content-header {
     margin: 0;
     color: white;
     font-size: 70px;
@@ -17,28 +30,20 @@
     text-align: center;
     padding-top: 50px;
 }
-.page404-subheader {
+.page404-content-subheader {
     margin: 0;
     color: white;
     font-size: 50px;
     z-index: 2;
     text-align: center;
 }
-.page404-joke {
+.page404-content-joke {
     margin: 60px 0 0 0;
     padding-bottom: 50px;
     color: white;
     font-size: 25px;
     z-index: 2;
     text-align: center;
-}
-.page404-nyan_backdrop {
-    position: absolute;
-    object-fit: cover;
-    filter: blur(8px) brightness(70%);
-    width: 100%;
-    height: 100%;
-    z-index: 1;
 }
 @media (max-width: 600px) {
     .page404 {
