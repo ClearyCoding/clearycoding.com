@@ -16,10 +16,10 @@
     --light_black_2: #212123; /* Header Gradient */
     --light_black_1: #222326; /* Background */
 
-    /* Text Sizes */
+    /* Text Sizes
     --header:;
     --subheader:;
     --description:;
     --stats:;
-    --footerlink:;
+    --footer_link:; */
 }
