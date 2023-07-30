@@ -15,7 +15,6 @@
 }
 /* Footer Contact Section */
 .footer-contact {
-    margin-top: 10px;
     display: block;
 }
 .footer-contact-icon {
@@ -75,6 +74,7 @@
 
     /* Footer Generic Section */
     .footer-section {
+        margin-top: 10px;
         flex-direction: column;
     }
     .footer-subsection {
@@ -112,6 +112,7 @@
 
     /* Footer Contact Section*/
     .footer-contact {
+        margin-top: 10px;
         transform: skew(20deg);
     }
     .footer-contact-container {
