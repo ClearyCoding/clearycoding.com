@@ -3,6 +3,67 @@
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
-    height: 2000px;
     border: white solid 5px;
+}
+.pageJournal-featured {
+    width: 100%;
+    height: 500px;
+}
+.pageJournal-grid {
+    display: grid;
+}
+.pageJournal-item {
+    height: 300px;
+    box-sizing: border-box;
+    border: lime 3px solid;
+}
+
+/* More Button */
+
+/*
+ <a href="#item-1"><div class="pageJournal-item-more_button">
+                <div class="pageJournal-item-more_button-text">More &#8594</div>
+            </div></a>
+ */
+
+.pageJournal-item-more_button:hover {
+    background-color: white;
+    color: rebeccapurple;
+}
+.pageJournal-item-more_button {
+    padding: 8px 10px;
+    margin-top: 20px;
+    border: white solid 3px;
+    border-radius: 1px;
+    color: white;
+    transform: skew(-20deg);
+    display: inline-block;
+}
+.pageJournal-item-more_button-text {
+    transform: skew(20deg);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+}
+
+@media (min-width: 1200px) {
+    .pageJournal-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 705px) and (max-width: 1200px) {
+    .pageJournal-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 475px) and (max-width: 705px) {
+    .pageJournal-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 475px) {
+    .pageJournal-grid {
+        grid-template-columns: 1fr;
+    }
 }
