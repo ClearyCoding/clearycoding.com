@@ -3,7 +3,6 @@
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
-    border: white solid 5px;
 }
 .pageJournal-featured {
     width: 100%;
@@ -13,21 +12,25 @@
     display: grid;
 }
 .pageJournal-item {
-    height: 400px;
+    height: 410px;
     box-sizing: border-box;
-    border: lime 3px solid;
+    box-shadow: 0 0 10px rebeccapurple inset, 0 0 30px #432e63 inset;
     margin: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     padding: 15px;
+    background: linear-gradient(#212123, #171717, #212123);
+    border-radius: 2px;
 }
 .pageJournal-item-thumbnail {
     width: 100%;
     box-sizing: border-box;
-    border: orange 2px solid;
     height: 50%;
+    filter: blur(10%) brightness(40%) ;
+    border-radius: 2px;
+    background-size: cover;
 }
 .pageJournal-item-date {
     color: darkgray;
@@ -47,8 +50,13 @@
     font-family: inherit;
     color: white;
     font-size: 18px;
-    overflow-wrap: break-word;
+    height: 64px;
+    overflow: clip;
     text-align: center;
+    margin: 10px 0;
+}
+.pageJournal-item-description p {
+    margin: 0;
 }
 
 /* More Button */
