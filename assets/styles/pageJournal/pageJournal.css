@@ -7,6 +7,8 @@
 .pageJournal-featured {
     width: 100%;
     height: 500px;
+    background: #1e1e1e;
+    border-bottom: #676767 1px solid;
 }
 .pageJournal-grid {
     display: grid;
@@ -14,14 +16,14 @@
 .pageJournal-item {
     height: 410px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px rebeccapurple inset, 0 0 30px #432e63 inset;
+    /*box-shadow: 0 0 10px rebeccapurple inset, 0 0 30px #432e63 inset;*/
     margin: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     padding: 15px;
-    background: linear-gradient(#212123, #171717, #212123);
+    /*background: linear-gradient(#212123, #171717, #212123);*/
     border-radius: 2px;
 }
 .pageJournal-item-thumbnail {
