@@ -9,65 +9,78 @@
     height: 500px;
     background: #1e1e1e;
     border-bottom: #676767 1px solid;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 .pageJournal-grid {
     display: grid;
 }
+
+/* Item */
 .pageJournal-item {
     height: 410px;
-    box-sizing: border-box;
-    /*box-shadow: 0 0 10px rebeccapurple inset, 0 0 30px #432e63 inset;*/
     margin: 30px 20px;
+    padding: 15px;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding: 15px;
-    /*background: linear-gradient(#212123, #171717, #212123);*/
-    border-radius: 2px;
+    flex-direction: column;
 }
+
+/* Thumbnail */
 .pageJournal-item-thumbnail {
     width: 100%;
     box-sizing: border-box;
+    object-fit: cover;
     height: 50%;
     filter: blur(10%) brightness(40%) ;
-    border-radius: 2px;
-    background-size: cover;
+    border-radius: 5px;
+    border: #1e1e1e 3px solid;
 }
-.pageJournal-item-date {
+
+/* Text Box */
+.pageJournal-item-text {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pageJournal-item-text-date {
     color: darkgray;
     font-size: 14px;
     font-family: Arial, sans-serif;
     font-weight: 700;
     margin: 5px 0 0 0;
 }
-.pageJournal-item-title {
+.pageJournal-item-text-title {
     color: white;
     font-family: inherit;
     font-size: 24px;
     font-weight: 700;
     margin: 0;
 }
-.pageJournal-item-description {
+.pageJournal-item-text-description {
     font-family: inherit;
     color: white;
     font-size: 18px;
-    height: 64px;
+    height: 3lh;
     overflow: clip;
     text-align: center;
     margin: 10px 0;
 }
-.pageJournal-item-description p {
+.pageJournal-item-text-description p {
     margin: 0;
 }
 
 /* More Button */
 
-.pageJournal-item-more_button:hover {
+.pageJournal-item-text-more_button:hover {
     background-color: white;
     color: rebeccapurple;
 }
-.pageJournal-item-more_button {
+.pageJournal-item-text-more_button {
     padding: 8px 10px;
     border: white solid 3px;
     border-radius: 1px;
@@ -75,7 +88,7 @@
     transform: skew(-20deg);
     display: inline-block;
 }
-.pageJournal-item-more_button-text {
+.pageJournal-item-text-more_button-text {
     transform: skew(20deg);
     font-size: 24px;
     font-weight: 700;
@@ -86,20 +99,51 @@
 @media (min-width: 1200px) {
     .pageJournal-grid {
         grid-template-columns: 25% 25% 25% 25%;
+        padding: 0 30px;
     }
 }
 @media (min-width: 900px) and (max-width: 1200px) {
     .pageJournal-grid {
         grid-template-columns: 33% 34% 33%;
+        padding: 0 20px;
     }
 }
 @media (min-width: 600px) and (max-width: 900px) {
     .pageJournal-grid {
         grid-template-columns: 50% 50%;
+        padding: 0 10px;
     }
 }
 @media (max-width: 600px) {
     .pageJournal-grid {
         grid-template-columns: 100%;
+        padding: 0 5px;
+    }
+}
+
+@media (min-width: 650px) {
+    .pageJournal-featured .pageJournal-item {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .pageJournal-featured .pageJournal-item-thumbnail {
+        height: 400px;
+        margin-right: 10px
+    }
+    .pageJournal-featured .pageJournal-item-text {
+        margin-left: 10px;
+    }
+    .pageJournal-featured .pageJournal-item-text-date {
+        font-size: 20px;
+    }
+    .pageJournal-featured .pageJournal-item-text-title {
+        font-size: 30px;
+    }
+    .pageJournal-featured .pageJournal-item-text-description {
+        font-size: 24px;
+    }
+    .pageJournal-featured .pageJournal-item-text-more_button-text {
+        font-size: 30px;
     }
 }
