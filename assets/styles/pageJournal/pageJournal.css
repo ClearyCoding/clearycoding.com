@@ -37,6 +37,11 @@
     height: 50%;
     filter: blur(10%) brightness(40%) ;
     border-radius: 5px;
+}
+.pageJournal-featured .pageJournal-item-thumbnail {
+    border: #171717 3px solid;
+}
+.pageJournal-grid .pageJournal-item-thumbnail {
     border: #1e1e1e 3px solid;
 }
 
@@ -93,7 +98,6 @@
     font-size: 24px;
     font-weight: 700;
     font-family: inherit;
-    display: inline-block;
 }
 
 @media (min-width: 1200px) {
