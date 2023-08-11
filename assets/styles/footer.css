@@ -17,6 +17,9 @@
 .footer-contact {
     display: block;
 }
+.footer-contact a{
+    text-decoration: none;
+}
 .footer-contact-icon {
     height: 30px;
 }
@@ -114,9 +117,6 @@
     .footer-contact {
         margin-top: 10px;
         transform: skew(20deg);
-    }
-    .footer-contact a{
-        text-decoration: none;
     }
     .footer-contact-container {
         height: 100%;
