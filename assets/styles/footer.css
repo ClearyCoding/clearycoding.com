@@ -69,7 +69,7 @@
         padding-bottom: 300px;
     }*/
     .footer {
-        position: static;
+        position: relative;
         flex-direction: column;
         grid-template-columns: 1fr 1fr;
         align-items: center;
