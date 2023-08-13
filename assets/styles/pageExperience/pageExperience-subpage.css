@@ -1,0 +1,116 @@
+.pageExperience-subpage-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background: #1e1e1e;
+    border-bottom: #676767 1px solid;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+}
+.pageExperience-subpage-title-title {
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+}
+.pageExperience-subpage-title-subtitle {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+.pageExperience-subpage-title-description {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+.pageExperience-subpage-title-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px) brightness(70%);
+}
+
+.pageExperience-subpage-list {
+    margin-top: 400px;
+    z-index: 2;
+    position: relative;
+    background: #222326;
+}
+
+.pageExperience-subpage-item {
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+.pageExperience-subpage-item-reversed .pageExperience-subpage-item-thumbnail {
+    order: 2;
+}
+.pageExperience-subpage-item-reversed .pageExperience-subpage-item-text {
+    text-align: right;
+}
+
+.pageExperience-subpage-item-thumbnail {
+    height: 100%;
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.pageExperience-subpage-item-thumbnail img {
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    height: 80%;
+    filter: blur(10%) brightness(40%) ;
+    border-radius: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+    border: #1e1e1e 3px solid;
+}
+.pageExperience-subpage-item-text {
+    height: 100%;
+    width: 60%;
+    box-sizing: border-box;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pageExperience-subpage-item-text-date {
+    color: darkgray;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+}
+.pageExperience-subpage-item-text-title {
+    color: white;
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+.pageExperience-subpage-item-text-description {
+    font-family: inherit;
+    color: white;
+    font-size: 20px;
+    height: 5lh;
+    overflow: clip;
+    margin: 10px 0;
+}

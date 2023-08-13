@@ -55,21 +55,11 @@
     text-align: center;
     margin: 0;
 }
-.pageExperience-category-more_button {
-    padding: 8px 10px;
+
+.clearycoding-more_button {
     margin-top: 20px;
-    border: white solid 3px;
-    border-radius: 1px;
-    color: white;
-    transform: skew(-20deg);
 }
-.pageExperience-category-more_button-text {
-    transform: skew(20deg);
-    font-size: 24px;
-    font-weight: 700;
-    font-family: inherit;
-}
-.pageExperience-category a:hover .pageExperience-category-more_button {
+.pageExperience-category a:hover .clearycoding-more_button {
     background-color: white;
     color: rebeccapurple;
 }
