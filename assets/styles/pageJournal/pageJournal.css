@@ -75,6 +75,13 @@
     text-align: center;
     margin: 10px 0;
 }
+/* if browser = firefox */
+@supports ( -moz-appearance:none ){
+    /* This is here because firefox does not support "lh" as a measurement  */
+    .pageJournal-item-text-description {
+        height: 67px;
+    }
+}
 .pageJournal-item-text-description p {
     margin: 0;
 }

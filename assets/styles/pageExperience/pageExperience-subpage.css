@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
+    height: 550px;
     background: #1e1e1e;
     border-bottom: #676767 1px solid;
     position: fixed;
@@ -45,7 +45,7 @@
 
 /* Subpage Items List*/
 .pageExperience-subpage-list {
-    margin-top: 400px;
+    margin-top: 550px;
     z-index: 2;
     position: relative;
     background: #222326;
@@ -111,9 +111,17 @@
     font-family: inherit;
     color: white;
     font-size: 20px;
-    height: 5lh;
-    overflow: clip;
+    max-height: 5lh;
+    overflow: hidden;
+    border: white solid 5px;
     margin: 10px 0;
+}
+/* if browser = firefox */
+@supports ( -moz-appearance:none ){
+    /* This is here because firefox does not support "lh" as a measurement  */
+    .pageExperience-subpage-item-text-description {
+        max-height: 124px;
+    }
 }
 .pageExperience-subpage-item-text-description p {
     margin: 0;
@@ -136,8 +144,8 @@
     /* Item */
     .pageExperience-subpage-item {
         height: 410px;
-        margin-top: 60px;
-        padding: 15px;
+        margin-top: 175px;
+        padding: 0 15px;
         box-sizing: border-box;
         display: flex;
         justify-items: center;
