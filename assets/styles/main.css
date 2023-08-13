@@ -11,6 +11,28 @@ body {
     font-family: Faustina, serif;
 }
 
+/* More Button */
+
+.clearycoding-more_button:hover {
+    background-color: white;
+    color: rebeccapurple;
+}
+.clearycoding-more_button {
+    padding: 8px 10px;
+    margin: 0 8.5px;
+    border: white solid 3px;
+    border-radius: 1px;
+    color: white;
+    transform: skew(-20deg);
+    display: inline-block;
+    cursor: pointer;
+}
+.clearycoding-more_button-text {
+    transform: skew(20deg);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: inherit;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
