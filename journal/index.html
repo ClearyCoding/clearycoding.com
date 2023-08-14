@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alexander J. Cleary">
 
-    <title>Home - Alexander J. Cleary</title>
+    <title>Journal - Alexander J. Cleary</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/branding/favicon.ico">
 
     <link rel="stylesheet" href="/assets/styles/pageJournal/pageJournal.css">
@@ -47,47 +47,53 @@
         </ul>
     </header>
     <main class="pageJournal">
-        <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
-        <p class="temp">Website Coming Soon! ;)</p>
-    </main>
-    <footer class="footer">
-        <section class="footer-contact-container">
-            <nav class="footer-contact">
-                <br>
-                <p class="footer-section-title">Contacts</p>
-                <a>
-                    <img src="/assets/images/email-icon.png" alt="My Email Contact" class="footer-contact-icon">
-                </a>
-                <a href="https://github.com/ClearyCoding/" target="_blank">
-                    <img src="/assets/images/github-icon.png" alt="My Github Profile" class="footer-contact-icon">
-                </a>
-            </nav>
+        <section class="pageJournal-featured">
+            <div id="item-3" class="pageJournal-item">
+                <img src="/assets/images/pageJournal-thumbnails/item-1.png" alt="The Labs" class="pageJournal-item-thumbnail">
+                <div class="pageJournal-item-text">
+                    <p class="pageJournal-item-text-date">02 August 2023</p>
+                    <p class="pageJournal-item-text-title">Journal Page Testing</p>
+                    <div class="pageJournal-item-text-description">
+                        <p>The Journal page is now in progress! This early build contains prototypes for what will eventually by filled by journal entries!</p>
+                        <p>This text is also being used to fill up space for testing purposes! Say hi, you are one of the early ones here!</p>
+                    </div>
+                    <a href="#comingsoon"><div class="clearycoding-more_button">
+                        <div class="clearycoding-more_button-text">More &#8594</div>
+                    </div></a> <!-- TODO: Add journal buttons functionality-->
+                </div>
+            </div>
         </section>
-        <ul class="footer-section">
-            <li class="footer-section-title">Main</li>
-            <li><a href="/" class="footer-section-item">Home</a>
-            <li><a class="footer-section-item" href="/experience">Experience</a></li>
-            <li><a class="footer-section-item" href="/journal">Journal</a></li>
-        </ul>
-        <ul class="footer-section">
-            <li class="footer-section-title">Experience</li>
-            <li><a class="footer-section-item" href="/experience/stem">STEM</a></li>
-            <li><a class="footer-section-item" href="/experience/non_stem">Non-STEM</a></li>
-            <li><a class="footer-section-item" href="/experience/portfolio">Portfolio</a></li>
-        </ul>
-        <ul class="footer-section">
-            <li class="footer-section-title">Foo Bar</li>
-            <li class="footer-section-item">Lorem Ipsum</li>
-            <li class="footer-section-item"> The Quick.</li>
-            <li class="footer-section-item"> The Quick.</li>
-        </ul>
-        <div class="site-version">
-            clearycoding.com v0.0.5
-        </div>
-    </footer>
+        <section class="pageJournal-grid">
+            <div id="item-2" class="pageJournal-item">
+                <img src="/assets/images/pageJournal-thumbnails/item-1.png" alt="The Labs" class="pageJournal-item-thumbnail">
+                <div class="pageJournal-item-text">
+                    <p class="pageJournal-item-text-date">02 August 2023</p>
+                    <p class="pageJournal-item-text-title">Journal Page Testing</p>
+                    <div class="pageJournal-item-text-description">
+                        <p>The Journal page is now in progress! This early build contains prototypes for what will eventually by filled by journal entries!</p>
+                        <p>This text is also being used to fill up space for testing purposes! Say hi, you are one of the early ones here!</p>
+                    </div>
+                    <a href="#comingsoon"><div class="clearycoding-more_button">
+                        <div class="clearycoding-more_button-text">More &#8594</div>
+                    </div></a>
+                </div>
+            </div>
+            <div id="item-1" class="pageJournal-item">
+                <img src="/assets/images/nyan.gif" alt="The Labs" class="pageJournal-item-thumbnail">
+                <div class="pageJournal-item-text">
+                    <p class="pageJournal-item-text-date">DD MMMMMMM YYYY</p>
+                    <p class="pageJournal-item-text-title">TTTTTTTTTTTTTTTTTT</p>
+                    <div class="pageJournal-item-text-description">
+                        <p>This text is also being used to fill up space for testing purposes! Say hi, you are one of the early ones here!</p>
+                        <p>This text is also being used to fill up space for testing purposes! Say hi, you are one of the early ones here!</p>
+                    </div>
+                    <a href="#comingsoon"><div class="clearycoding-more_button">
+                        <div class="clearycoding-more_button-text">More &#8594</div>
+                    </div></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <iframe src="/assets/html/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
 </body>
 </html>

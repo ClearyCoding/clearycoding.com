@@ -1,0 +1,26 @@
+/* This document exists exclusively for development purposes, It does nothing for the website */
+:root {
+
+    /* Colour Codes */
+    --light_purple: rebeccapurple; /* (#663399) Purple Accenting */
+    --dark_purple: #432e63; /* Purple Gradients */
+
+    --white: white; /* (#ffffff) Text */
+    --light_grey: darkgrey; /* (#a9a9a9) Footer Item Hover */
+    --grey: grey; /* (#808080) Footer Item */
+    --dark_grey: #676767; /* Footer Version Number */
+
+    --black: black; /* (#000000) */
+    --dark_black_1: #111111; /* Footer, Header Gradient */
+    --dark_black_2: #171717; /* Experience Dropdown */
+    --medium_black: #1e1e1e; /* Mobile-Header Dropdown */
+    --light_black_2: #212123; /* Header Gradient */
+    --light_black_1: #222326; /* Background */
+
+    /* Text Sizes
+    --header:;
+    --subheader:;
+    --description:;
+    --stats:;
+    --footer_link:; */
+}
