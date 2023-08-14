@@ -278,7 +278,6 @@ body {
         /* Dropdown Menus */
         .header-navbar-dropdown-content {
             right: 135px;
-            top: 70px;
         }
 
         /* Dropdown Menus*/
@@ -306,7 +305,6 @@ body {
         /* Dropdown Menus */
         .header-navbar-dropdown-content {
             right: 225px;
-            top: 70px;
         }
         .header-navbar-dropdown-content a {
             padding: 12px 30px;
@@ -334,6 +332,10 @@ body {
     }
 
     /* Dropdown Menus */
+    .header-navbar-dropdown-content {
+        border-radius: 0 0 5px 5px;
+        top: 70px;
+    }
     .header-navbar-dropdown-arrow {
         position: absolute;
     }
