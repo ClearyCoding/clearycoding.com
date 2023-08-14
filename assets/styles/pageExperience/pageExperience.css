@@ -53,11 +53,7 @@
     color: white;
     font-size: 32px;
     text-align: center;
-    margin: 0;
-}
-
-.clearycoding-more_button {
-    margin-top: 20px;
+    margin: 0 0 20px 0;
 }
 .pageExperience-category a:hover .clearycoding-more_button {
     background-color: white;
