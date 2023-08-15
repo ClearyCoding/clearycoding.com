@@ -159,6 +159,10 @@
     .pageExperience-subpage-item-thumbnail {
         width: 80%;
         height: 50%;
+        margin-bottom: 0;
+    }
+    .pageExperience-subpage-item-thumbnail img {
+        margin: 0
     }
 
     /* Text Box */
@@ -169,7 +173,7 @@
         flex-direction: column;
     }
     .pageExperience-subpage-item-text-date {
-        margin: 5px 0 0 0;
+        margin: 0;
     }
     .pageExperience-subpage-item-text-title {
         margin: 0;
