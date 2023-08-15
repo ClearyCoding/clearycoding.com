@@ -128,9 +128,6 @@
         max-height: 124px;
     }
 }
-.pageExperience-subpage-item-text-description p {
-    margin: 0;
-}
 @media (min-width: 700px) {
     .pageExperience-subpage-item:nth-child(even) .pageExperience-subpage-item-thumbnail {
         order: 2;
