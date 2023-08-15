@@ -77,7 +77,6 @@
     box-sizing: border-box;
     object-fit: cover;
     height: 80%;
-    filter: blur(10%) brightness(40%) ;
     border-radius: 5px;
     margin-right: 10px;
     overflow: hidden;
@@ -96,7 +95,7 @@
 .pageExperience-subpage-item-text-date {
     color: darkgray;
     font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-family: inherit;
     font-weight: 700;
     margin: 5px 0 0 0;
 }
@@ -104,6 +103,13 @@
     color: white;
     font-family: inherit;
     font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+.pageExperience-subpage-item-text-role {
+    color: darkgray;
+    font-size: 22px;
+    font-family: inherit;
     font-weight: 700;
     margin: 0;
 }
@@ -126,10 +132,10 @@
     margin: 0;
 }
 @media (min-width: 700px) {
-    .pageExperience-subpage-item-reversed .pageExperience-subpage-item-thumbnail {
+    .pageExperience-subpage-item:nth-child(even) .pageExperience-subpage-item-thumbnail {
         order: 2;
     }
-    .pageExperience-subpage-item-reversed .pageExperience-subpage-item-text {
+    .pageExperience-subpage-item:nth-child(even) .pageExperience-subpage-item-text {
         text-align: right;
     }
 }
