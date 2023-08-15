@@ -191,11 +191,11 @@ body {
         font-size: 16px;
     }
     .header-navbar-dropdown-content {
-        align-items: center;
         background: #171717;
     }
     .header-navbar-dropdown-content a {
         padding: 12px 0;
+        width: 100%;
     }
 
     /* Header Collapsing "Burger" Button */
