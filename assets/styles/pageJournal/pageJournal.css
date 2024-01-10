@@ -12,9 +12,60 @@
     display: flex;
     justify-items: center;
     align-items: center;
+    z-index: 2;
+    margin-top: 550px;
+    box-shadow: 0 2px 15px rebeccapurple;
+
 }
 .pageJournal-grid {
     display: grid;
+    background: #222326;
+    z-index: 3;
+}
+
+/* Page Title */
+.pageJournal-subpage-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 550px;
+    background: #1e1e1e;
+    border-bottom: #676767 1px solid;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+}
+.pageJournal-subpage-title-title {
+    color: white;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+}
+.pageJournal-subpage-title-subtitle {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+.pageJournal-subpage-title-description {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    max-width: 1000px;
+}
+.pageJournal-subpage-title-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px) brightness(70%);
 }
 
 /* Item */
