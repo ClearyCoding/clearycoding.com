@@ -1,0 +1,57 @@
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    position: fixed;
+    z-index: 255;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
+#loader-logo {
+    height: 90px;
+    width: 90px;
+}
+#loader-title {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: rebeccapurple;
+}
+#loader-subtitle {
+    font-size: 4rem;
+    color: white;
+}
+#loader-title,
+#loader-subtitle {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+#loader-notice {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+#loader-wheel {
+    border: 16px solid #663399;
+    border-top: 16px solid #432e63;
+    border-bottom: 16px solid #432e63;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

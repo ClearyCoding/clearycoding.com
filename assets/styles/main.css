@@ -1,3 +1,6 @@
+* {
+    scroll-behavior: smooth;
+}
 html {
     height: 100%;
     box-sizing: border-box;
@@ -7,17 +10,58 @@ body {
     min-height: 100%;
     box-sizing: inherit;
     margin: 0;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    width: 100%;
     background-color: #222326;
-    font-family: Faustina, serif;
+}
+.parallax {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    width: 100%;
+}
+.backdrop {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateZ(-5px) scale(1.5);
+    position: absolute;
+    width: calc(100% + 10px);
+    object-fit: cover;
+    z-index: -1;
+}
+.section {
+    position: relative;
+    min-height: 450px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.void {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.anchor {
+    position: absolute;
+    top: -70px;
 }
 
 /* More Button */
-
-.clearycoding-more_button:hover {
-    background-color: white;
-    color: rebeccapurple;
-}
-.clearycoding-more_button {
+.button {
     padding: 8px 10px;
     margin: 0 8.5px;
     border: white solid 3px;
@@ -27,13 +71,18 @@ body {
     display: inline-block;
     cursor: pointer;
 }
-.clearycoding-more_button-text {
+.button:hover {
+    background-color: white;
+    color: rebeccapurple;
+}
+.button-text {
     transform: skew(20deg);
     font-size: 24px;
     font-weight: 700;
     font-family: inherit;
 }
 
+/* Scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -45,4 +94,22 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #432e63;
+}
+
+/* Font */
+h1, h2, h3, h4, h5, h6, p, div {
+    font-family: Faustina, serif;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.2rem;
 }

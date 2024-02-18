@@ -8,8 +8,9 @@
     <title>Home - Alexander J. Cleary</title>
     <link rel="icon" type="image/x-icon" href="/assets/images/branding/favicon.ico">
 
-    <link rel="stylesheet" href="/assets/styles/pageHome/pageHome.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/sections.css">
+    <link rel="stylesheet" href="/assets/styles/loader.css">
     <link rel="stylesheet" href="/assets/styles/header.css">
     <link rel="stylesheet" href="/assets/styles/footer.css">
 
@@ -18,6 +19,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="/assets/scripts/init.js"></script>
+    <div id="loader">
+        <div id="loader-wheel">
+            <img alt="Gang Show Logo" src="/assets/images/branding/original.png" id="loader-logo">
+        </div>
+        <div id="loader-title">clearycoding.com</div>
+        <div id="loader-subtitle">Loading...</div>
+        <div id="loader-notice">This site relies on JavaScript, if you have JavaScript disabled, please enable to view the site.</div>
+    </div>
+
     <header  class="header">
         <div class="screen-size-warning">
             This Website Does Not Support Screen Widths Less Than 325px. Sorry For The Inconvenience.
@@ -47,55 +58,69 @@
         </ul>
     </header>
     <main class="pageHome">
-        <h1 class="temp">Landing Page Coming Soon! ;)</h1>
-        <h2 class="temp" style="font-size: 24px; margin: 20px 0;">Check out some other pages in the meantime!</h2>
+        <section class="section section-title">
+            <div>
+                <h2>Hi, My Name Is Alexander Cleary!</h2>
+                <p>A keen student at the John Monash Science School, with a passion for Science and Technology, I aspire to find my place in the scientific community.</p>
+            </div>
+            <div>Image Here Soon</div>
+        </section>
+        <section class="section section-experience">
+            <h3>Experience</h3>
+        </section>
+        <section class="section section-journal">
+            <h3>Journal</h3>
+        </section>
+        <section class="section section-portfolio">
+            <h3>Portfolio</h3>
+        </section>
+        <footer class="footer">
+            <section class="footer-contact-container">
+                <nav class="footer-contact">
+                    <br>
+                    <p class="footer-section-title">Contact Me</p>
+                    <a href="mailto:alexjacleary@gmail.com" target="_blank">
+                        <img src="/assets/images/email-icon.png" alt="My Email Contact" class="footer-contact-icon">
+                    </a>
+                    <a href="https://github.com/ClearyCoding/" target="_blank">
+                        <img src="/assets/images/github-icon.png" alt="My Github Profile" class="footer-contact-icon">
+                    </a>
+                </nav>
+            </section>
+            <section class="footer-section">
+                <ul class="footer-subsection">
+                    <li class="footer-section-title">ClearyCoding.Com</li>
+                    <li><a href="/" class="footer-section-item">Home</a>
+                    <li><a class="footer-section-item" href="/experience/stem">STEM Experience</a></li>
+                    <li><a class="footer-section-item" href="/experience/non_stem">Non-STEM Experience</a></li>
+                </ul>
+                <ul class="footer-subsection">
+                    <li><br></li>
+                    <li><a class="footer-section-item" href="/experience/portfolio">Portfolio</a></li>
+                    <li><a class="footer-section-item" href="/journal">Journal</a></li>
+                    <li><br></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <ul class="footer-subsection">
+                    <li class="footer-section-title">Directory Pages</li>
+                    <li><a class="footer-section-item" href="/experience">Experience</a></li>
+                    <li><br></li>
+                    <li><br></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <ul class="footer-subsection">
+                    <li class="footer-section-title">Content Pages</li>
+                    <li><br></li>
+                    <li><br></li>
+                    <li><br></li>
+                </ul>
+            </section>
+            <aside class="site-version">
+                clearycoding.com v0.1.2
+            </aside>
+        </footer>
     </main>
-    <footer class="footer">
-        <section class="footer-contact-container">
-            <nav class="footer-contact">
-                <br>
-                <p class="footer-section-title">Contact Me</p>
-                <a href="mailto:alexjacleary@gmail.com" target="_blank">
-                    <img src="/assets/images/email-icon.png" alt="My Email Contact" class="footer-contact-icon">
-                </a>
-                <a href="https://github.com/ClearyCoding/" target="_blank">
-                    <img src="/assets/images/github-icon.png" alt="My Github Profile" class="footer-contact-icon">
-                </a>
-            </nav>
-        </section>
-        <section class="footer-section">
-            <ul class="footer-subsection">
-                <li class="footer-section-title">ClearyCoding.Com</li>
-                <li><a href="/" class="footer-section-item">Home</a>
-                <li><a class="footer-section-item" href="/experience/stem">STEM Experience</a></li>
-                <li><a class="footer-section-item" href="/experience/non_stem">Non-STEM Experience</a></li>
-            </ul>
-            <ul class="footer-subsection">
-                <li><br></li>
-                <li><a class="footer-section-item" href="/experience/portfolio">Portfolio</a></li>
-                <li><a class="footer-section-item" href="/journal">Journal</a></li>
-                <li><br></li>
-            </ul>
-        </section>
-        <section class="footer-section">
-            <ul class="footer-subsection">
-                <li class="footer-section-title">Directory Pages</li>
-                <li><a class="footer-section-item" href="/experience">Experience</a></li>
-                <li><br></li>
-                <li><br></li>
-            </ul>
-        </section>
-        <section class="footer-section">
-            <ul class="footer-subsection">
-                <li class="footer-section-title">Content Pages</li>
-                <li><br></li>
-                <li><br></li>
-                <li><br></li>
-            </ul>
-        </section>
-        <aside class="site-version">
-            clearycoding.com v0.1.2
-        </aside>
-    </footer>
 </body>
 </html>
