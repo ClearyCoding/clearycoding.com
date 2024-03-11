@@ -85,11 +85,15 @@ const experienceData =  {
             image: "",
             button: "",
         },
-    ],
-    journal: [
-
-    ],
+    ]
 }
+const journalData = [
+    {
+        title: "",
+        tags: [""],
+
+    },
+]
 
 // Loading Screen
 document.onreadystatechange = () => {
