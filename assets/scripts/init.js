@@ -90,8 +90,11 @@ const experienceData =  {
 const journalData = [
     {
         title: "",
+        description: "",
+        date: "",
         tags: [""],
-
+        image: "",
+        button: "",
     },
 ]
 
@@ -105,3 +108,25 @@ document.onreadystatechange = () => {
         document.querySelector("body").style.visibility = "visible";
     }
 };
+
+// Main Page Carousels
+document.addEventListener('DOMContentLoaded', (event) => {
+    for (i = 0; i < 3; i++) {
+        const section = ["journal", "experience", "portfolio"][i]
+        console.log(section)
+        const prev = document.querySelector(`#${section}-prev`)
+        const next = document.querySelector(`#${section}-next`)
+        const carousel = document.querySelector(`#${section}-carousel`)
+        const itemWidth = 300
+        const padding = 10
+
+        console.log(prev)
+
+        prev.addEventListener('click', () => {
+            carousel.scrollLeft -= (itemWidth + padding)
+        })
+        next.addEventListener('click', () => {
+            carousel.scrollLeft += (itemWidth + padding)
+        })
+    }
+})
