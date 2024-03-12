@@ -2,7 +2,7 @@
 .carousel-item {
     height: 410px;
     margin: 30px 20px;
-    padding: 15px;
+    padding: 15px 0;
     box-sizing: border-box;
     display: flex;
     justify-items: center;

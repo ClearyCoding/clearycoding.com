@@ -78,7 +78,19 @@ const experienceData =  {
     ],
     portfolio: [
         {
-            title: "alburygangshow.com.au",
+            title: "Survey Website",
+            role: "Frontend Web Development",
+            start: 2024,
+            end: 2024,
+            description: "Building a survey website for a school assignment, learning how to interface with backend servers, collect data and produce graphs.",
+            image: "survey.png",
+            button: "https://playground.clearycoding.com",
+            buttonText: "Visit",
+            id: 0,
+            pinned: true,
+        },
+        {
+            title: "Albury Gang Show",
             role: "Frontend Web Development",
             start: 2023,
             end: 2024,
@@ -90,7 +102,7 @@ const experienceData =  {
             pinned: true,
         },
         {
-            title: "clearycoding.com.au",
+            title: "Cleary Coding",
             role: "Web Development",
             start: 2023,
             end: 2024,
@@ -130,20 +142,35 @@ document.addEventListener('DOMContentLoaded', () => {
     for (i = 0; i < 3; i++) {
         const section = ["journal", "experience", "portfolio"][i]
         const data = [journalData, experienceData.stem, experienceData.portfolio][i]
-        console.log(section)
         const prev = document.querySelector(`#${section}-prev`)
         const next = document.querySelector(`#${section}-next`)
         const carousel = document.querySelector(`#${section}-carousel`)
         const itemWidth = 300
         const padding = 10
 
-        console.log(prev)
+        function updateCarouselButtons() {
+            if (carousel.scrollLeft <= 20) {
+                prev.style.visibility = "hidden"
+            } else {
+                prev.style.visibility = "visible"
+            }
+            if (carousel.scrollLeft >= (carousel.scrollWidth - carousel.clientWidth) - 20) {
+                next.style.visibility = "hidden"
+            } else {
+                next.style.visibility = "visible"
+            }
+        }
 
         prev.addEventListener('click', () => {
             carousel.scrollLeft -= (itemWidth + padding)
         })
         next.addEventListener('click', () => {
             carousel.scrollLeft += (itemWidth + padding)
+        })
+
+        updateCarouselButtons()
+        carousel.addEventListener('scroll', () => {
+            updateCarouselButtons()
         })
 
         for (j = 0; j < data.length; j++) {
