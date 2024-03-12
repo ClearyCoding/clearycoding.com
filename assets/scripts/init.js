@@ -115,13 +115,15 @@ const experienceData =  {
 }
 const journalData = [
     {
-        title: "Journal Page Test",
-        image: "",
+        title: "Web Carousels",
+        image: "carousel.png",
         pinned: true,
-        description: "Hi",
-        date: "NaN",
-        tags: [""],
+        description: "Learned how to create carousels for image/item display in CSS and JS.",
+        date: "12th Mar 2024",
+        tags: ["Programming"],
         button: "#test",
+        buttonText: "Read",
+        text: "",
     },
 ]
 
@@ -176,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data[j].pinned === true) {
                 carousel.innerHTML += `
                 <article id="${section}-${data[j].id}" class="carousel-item">
-                    <img src="${data[j].image ?`/assets/images/${["portfolio", "experience", "portfolio"][i]}-thumbnails/${data[j].image}` : '/assets/images/thumbnail.png'}" alt="Thumbnail" class="carousel-item-thumbnail">
+                    <img src="${data[j].image ?`/assets/images/${["journal", "experience", "portfolio"][i]}-thumbnails/${data[j].image}` : '/assets/images/thumbnail.png'}" alt="Thumbnail" class="carousel-item-thumbnail">
                     <section class="carousel-item-text">
                         <time class="carousel-item-text-date">${data[j].date ? `${data[j].date}` : `${data[j].end ? `${data[j].start === data[j].end ? `${data[j].start}` : `${data[j].start} - ${data[j].end}`}`: `${data[j].start} - Current`}`}</time>
                         <h3 class="carousel-item-text-title">${data[j].title}</h3>
