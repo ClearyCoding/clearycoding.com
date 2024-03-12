@@ -89,12 +89,13 @@ const experienceData =  {
 }
 const journalData = [
     {
-        title: "",
-        description: "",
-        date: "",
+        title: "Journal Page Test",
+        id: 0,
+        pinned: true,
+        description: "Hi",
+        date: "NaN",
         tags: [""],
-        image: "",
-        button: "",
+        button: "#test",
     },
 ]
 
@@ -110,7 +111,7 @@ document.onreadystatechange = () => {
 };
 
 // Main Page Carousels
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     for (i = 0; i < 3; i++) {
         const section = ["journal", "experience", "portfolio"][i]
         console.log(section)
@@ -128,5 +129,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
         next.addEventListener('click', () => {
             carousel.scrollLeft += (itemWidth + padding)
         })
+
+        for (j = 0; j < journalData.length; j++) {
+            if (journalData[j].pinned === true) {
+                carousel.innerHTML += `
+                <article id="${section}-${journalData[j].id}" class="carousel-item">
+                    <img src="/assets/images/${section}-thumbnails/item-${journalData[j].id}.png" alt="Thumbnail" class="carousel-item-thumbnail">
+                    <section class="carousel-item-text">
+                        <time class="carousel-item-text-date">${journalData[j].date}</time>
+                        <h1 class="carousel-item-text-title">${journalData[j].title}</h1>
+                        <p class="carousel-item-text-description">
+                            ${journalData[j].description}
+                        </p>
+                        ${journalData[j].button ? `<a href=${journalData[j].button}><div class="button"> <div class="button-text">More &#8594</div> </div></a>` : ''}
+                    </section>
+                </article>
+                `
+            }
+        }
     }
 })

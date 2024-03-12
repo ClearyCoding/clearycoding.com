@@ -1,0 +1,63 @@
+/* Item */
+.carousel-item {
+    height: 410px;
+    margin: 30px 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Thumbnail */
+.carousel-item-thumbnail {
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+    height: 50%;
+    filter: blur(10%) brightness(40%) ;
+    border-radius: 5px;
+    border: #1e1e1e 3px solid;
+}
+
+/* Text Box */
+.carousel-item-text {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.carousel-item-text-date {
+    color: darkgray;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+}
+.carousel-item-text-title {
+    color: white;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+.carousel-item-text-description {
+    font-family: inherit;
+    color: white;
+    font-size: 18px;
+    height: 3lh;
+    overflow: clip;
+    text-align: center;
+    margin: 10px 0;
+}
+/* if browser = firefox */
+@supports ( -moz-appearance:none ){
+    /* This is here because firefox does not support "lh" as a measurement  */
+    .carousel-item-text-description {
+        height: 67px;
+    }
+}
+.carousel-item-text-description p {
+    margin: 0;
+}
