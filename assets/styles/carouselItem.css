@@ -41,6 +41,7 @@
     font-size: 24px;
     font-weight: 700;
     margin: 0;
+    text-align: center;
 }
 .carousel-item-text-description {
     font-family: inherit;

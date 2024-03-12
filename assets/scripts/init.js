@@ -5,18 +5,22 @@ const experienceData =  {
             role: "Tutor",
             start: 2023,
             end: 2023,
+            pinned: true,
             description: "One-on-one tutoring students in various computer and programming skills.",
             image: "",
             button: "",
+            id: 0,
         },
         {
             title: "Monash School of Physics and Astronomy",
             role: "Work Experience",
             start: 2023,
+            pinned: true,
             end: 2023,
             description: "Working on a research project, conversing with PhD and post-doctorate researchers, attending astrophysics meetings, touring the Australian Synchrotron, and learning about science communication.",
             image: "",
             button: "",
+            id: 1,
         },
         {
             title: "CodeClub.au",
@@ -26,6 +30,8 @@ const experienceData =  {
             description: "Teaching a small class of students aged ten to fourteen how to code using Scratch over a week-long course, including one-on-one teaching and presenting content to a group, planning, building, marketing and facilitating a business.",
             image: "",
             button: "",
+            id: 2,
+            pinned: true,
         },
     ],
     nonStem: [
@@ -37,6 +43,7 @@ const experienceData =  {
             description: "Working in a Kitchen-Hand role which involved preparing and serving meals, washing dishes, delivering meals to rooms and interacting with the residents..",
             image: "",
             button: "",
+            id: 0,
         },
         {
             title: "Albury Gang Show",
@@ -46,6 +53,7 @@ const experienceData =  {
             description: "Cast member in production produced by Scouts, involving participating in rehearsals and live performances at the Albury Entertainment Centre, and collaborating on script writing at creative meetings.",
             image: "",
             button: "",
+            id: 1,
         },
         {
             title: "Scouts Australia",
@@ -55,6 +63,7 @@ const experienceData =  {
             description: "Member of the scouts, participating in extreme activities, gaining skills in teamwork, adaptability and leadership. Assisted in many community projects and fundraising activities, including selling chocolates, sausage sizzles and raffles.",
             image: "",
             button: "",
+            id: 2,
         },
         {
             title: "Australian Air Force Cadets",
@@ -64,6 +73,7 @@ const experienceData =  {
             description: "Cadet in the Australian Air Force Cadets program, gaining leadership, navigation, survival, decision-making, bush-craft and obedience skills.",
             image: "",
             button: "",
+            id: 3,
         },
     ],
     portfolio: [
@@ -75,6 +85,8 @@ const experienceData =  {
             description: "Building a new website for the Albury Gang Show, a volunteer-led theatre company, acquiring skills such as front-end JavaScript, parallax and loading screens.",
             image: "",
             button: "",
+            id: 0,
+            pinned: true,
         },
         {
             title: "clearycoding.com.au",
@@ -84,6 +96,8 @@ const experienceData =  {
             description: "Building a personal website for showcasing my experience and storing personal projects, gaining skills such as front-end web development in HTML/CSS, alongside learning systems including git.",
             image: "",
             button: "",
+            id: 1,
+            pinned: true,
         },
     ]
 }
@@ -114,6 +128,7 @@ document.onreadystatechange = () => {
 document.addEventListener('DOMContentLoaded', () => {
     for (i = 0; i < 3; i++) {
         const section = ["journal", "experience", "portfolio"][i]
+        const data = [journalData, experienceData.stem, experienceData.portfolio][i]
         console.log(section)
         const prev = document.querySelector(`#${section}-prev`)
         const next = document.querySelector(`#${section}-next`)
@@ -130,18 +145,18 @@ document.addEventListener('DOMContentLoaded', () => {
             carousel.scrollLeft += (itemWidth + padding)
         })
 
-        for (j = 0; j < journalData.length; j++) {
-            if (journalData[j].pinned === true) {
+        for (j = 0; j < data.length; j++) {
+            if (data[j].pinned === true) {
                 carousel.innerHTML += `
-                <article id="${section}-${journalData[j].id}" class="carousel-item">
-                    <img src="/assets/images/${section}-thumbnails/item-${journalData[j].id}.png" alt="Thumbnail" class="carousel-item-thumbnail">
+                <article id="${section}-${data[j].id}" class="carousel-item">
+                    <img src="/assets/images/${section}-${i === 1 ? 'stem-' : ''}thumbnails/item-${data[j].id}.png" alt="Thumbnail" class="carousel-item-thumbnail">
                     <section class="carousel-item-text">
-                        <time class="carousel-item-text-date">${journalData[j].date}</time>
-                        <h1 class="carousel-item-text-title">${journalData[j].title}</h1>
+                        <time class="carousel-item-text-date">${data[j].date ? `${data[j].date}` : `${data[j].end ? `${data[j].start} - ${data[j].end}`: `${data[j].start}`}`}</time>
+                        <h1 class="carousel-item-text-title">${data[j].title}</h1>
                         <p class="carousel-item-text-description">
-                            ${journalData[j].description}
+                            ${data[j].description}
                         </p>
-                        ${journalData[j].button ? `<a href=${journalData[j].button}><div class="button"> <div class="button-text">More &#8594</div> </div></a>` : ''}
+                        ${data[j].button ? `<a href=${data[j].button}><div class="button"> <div class="button-text">More &#8594</div> </div></a>` : ''}
                     </section>
                 </article>
                 `
