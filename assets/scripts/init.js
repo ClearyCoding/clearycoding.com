@@ -79,7 +79,7 @@ const experienceData =  {
     portfolio: [
         {
             title: "Cleary Coding",
-            role: "Web Development",
+            role: "Frontend Web Development",
             start: 2023,
             end: 2024,
             description: "Building a personal website for showcasing my experience and storing personal projects, gaining skills such as front-end web development in HTML/CSS, alongside learning systems including git.",
@@ -180,7 +180,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${data[j].image ?`/assets/images/${["portfolio", "experience", "portfolio"][i]}-thumbnails/${data[j].image}` : '/assets/images/thumbnail.png'}" alt="Thumbnail" class="carousel-item-thumbnail">
                     <section class="carousel-item-text">
                         <time class="carousel-item-text-date">${data[j].date ? `${data[j].date}` : `${data[j].end ? `${data[j].start === data[j].end ? `${data[j].start}` : `${data[j].start} - ${data[j].end}`}`: `${data[j].start} - Current`}`}</time>
-                        <h1 class="carousel-item-text-title">${data[j].title}</h1>
+                        <h3 class="carousel-item-text-title">${data[j].title}</h3>
+                        <h4 class="carousel-item-text-role">${data[j].role ? `${data[j].role}` : ''}</h4>
                         <p class="carousel-item-text-description">
                             ${data[j].description}
                         </p>

@@ -43,6 +43,12 @@
     margin: 0;
     text-align: center;
 }
+.carousel-item-text-role {
+    color: darkgray;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
 .carousel-item-text-description {
     font-family: inherit;
     color: white;
@@ -50,7 +56,7 @@
     height: 3lh;
     overflow: clip;
     text-align: center;
-    margin: 10px 0;
+    margin: 2px 0 10px 0;
 }
 /* if browser = firefox */
 @supports ( -moz-appearance:none ){
