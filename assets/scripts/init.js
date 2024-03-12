@@ -59,7 +59,6 @@ const experienceData =  {
             title: "Albury Gang Show",
             role: "Cast/Crew Member",
             start: 2022,
-            end: null,
             description: "Cast member in production produced by Scouts, involving participating in rehearsals and live performances at the Albury Entertainment Centre, and collaborating on script writing at creative meetings.",
             image: "gang_show.jpg",
             button: "",
