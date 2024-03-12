@@ -52,14 +52,12 @@ body {
     border: none;
     outline: none;
     color: white;
-    font-family: inherit;
     margin: 0;
     display: block;
 }
 .header-navbar-dropdown-button {
     background-color: transparent;
     border-style: none;
-    font-family: inherit;
 }
 .header-navbar-dropdown-arrow {
     display: inline-block;
@@ -86,7 +84,6 @@ body {
     float: none;
     color: white;
     text-decoration: none;
-    font-family: inherit;
     text-align: center;
     display: block;
 }

@@ -80,7 +80,7 @@ body {
 }
 
 /* Font */
-h1, h2, h3, h4, h5, h6, p, div, a {
+h1, h2, h3, h4, h5, h6, p, div, a, label {
     font-family: Faustina, serif;
     color: white;
 }
