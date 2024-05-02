@@ -111,6 +111,18 @@ const experienceData =  {
             id: 0,
             pinned: true,
         },
+        {
+            title: "Galaga Recreation",
+            role: "Game Development",
+            start: 2024,
+            end: 2024,
+            description: "Building a python game for a school assignment, learning how to utilise Object Oriented Programming, and the pygame library.",
+            image: "galaga.png",
+            button: "https://github.com/ClearyCoding/Computing-SAC2",
+            buttonText: "Repository",
+            id: 0,
+            pinned: true,
+        },
     ]
 }
 const journalData = [
