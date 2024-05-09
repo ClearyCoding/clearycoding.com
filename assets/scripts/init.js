@@ -92,7 +92,7 @@ const experienceData =  {
             role: "Frontend Web Development",
             start: 2023,
             end: 2024,
-            description: "Building a new website for the Albury Gang Show, a volunteer-led theatre company, acquiring skills such as front-end JavaScript, parallax and loading screens.",
+            description: "Building a new website for the Albury Gang Show, acquiring skills such as front-end JavaScript, parallax and loading screens.",
             image: "albury_gang_show.png",
             button: "https://alburygangshow.com.au",
             buttonText: "Visit",
