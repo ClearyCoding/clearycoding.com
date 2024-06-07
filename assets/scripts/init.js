@@ -75,7 +75,7 @@ const experienceData =  {
             id: 0,
         },
     ],
-    portfolio: [
+    portfolio: [ //TODO: Make buttons open in new tab when not local link
         {
             title: "Cleary Coding",
             role: "Frontend Web Development",
@@ -119,6 +119,18 @@ const experienceData =  {
             description: "Building a python game for a school assignment, learning how to utilise Object Oriented Programming, and the pygame library.",
             image: "galaga.png",
             button: "https://github.com/ClearyCoding/Galaga-Computing_SAC2",
+            buttonText: "Repository",
+            id: 0,
+            pinned: true,
+        },
+        {
+            title: "Helper-Mathica",
+            role: "Frontend Web Development",
+            start: 2024,
+            end: 2024,
+            description: "Built a reference website for maths students to refer to Wolfram Mathematica syntax, learning how to create search functions and nested data structures.",
+            image: "helpermathica.png",
+            button: "https://github.com/ClearyCoding/HelperMathica-Computing_SAC3",
             buttonText: "Repository",
             id: 0,
             pinned: true,
