@@ -33,6 +33,17 @@ const experienceData =  {
             button: "",
             id: 0,
         },
+        /*{
+            title: "Cyber Security and Robotics Work Experience",
+            role: "Tutor",
+            start: 2024,
+            end: 2024,
+            pinned: true,
+            description: "",
+            image: "",
+            button: "",
+            id: 0,
+        },*/
     ],
     nonStem: [
         {
