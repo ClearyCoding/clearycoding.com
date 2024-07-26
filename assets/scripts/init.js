@@ -34,8 +34,8 @@ const experienceData =  {
             id: 0,
         },
         /*{
-            title: "Cyber Security and Robotics Work Experience",
-            role: "Tutor",
+            title: "Cyber Security and Robotics",
+            role: "Work Experience",
             start: 2024,
             end: 2024,
             pinned: true,
