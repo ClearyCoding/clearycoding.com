@@ -50,7 +50,6 @@ const experienceData =  {
             title: "Scouts Australia",
             role: "Member",
             start: 2015,
-            end: 2023,
             description: "Member of the scouts, participating in extreme activities, gaining skills in teamwork, adaptability and leadership. Assisted in many community projects and fundraising activities, including selling chocolates, sausage sizzles and raffles.",
             image: "scouts.jpg",
             button: "",
