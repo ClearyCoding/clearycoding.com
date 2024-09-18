@@ -44,6 +44,28 @@ const experienceData =  {
             button: "",
             id: 0,
         },*/
+        /*{
+            title: "Software Development",
+            role: "Work Experience",
+            start: 2024,
+            end: 2024,
+            pinned: true,
+            description: "",
+            image: "",
+            button: "",
+            id: 0,
+        },*/
+        /*{
+            title: "Biomedical Manufacturing",
+            role: "Work Experience",
+            start: 2024,
+            end: 2024,
+            pinned: true,
+            description: "",
+            image: "",
+            button: "",
+            id: 0,
+        },*/
     ],
     nonStem: [
         {
