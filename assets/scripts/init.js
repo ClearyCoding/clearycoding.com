@@ -45,7 +45,7 @@ const experienceData =  {
             id: 0,
         },
         {
-            title: "Biomedical Manufacturing",
+            title: "CSIRO Biomedical Manufacturing",
             role: "Work Experience",
             start: 2024,
             end: 2024,
